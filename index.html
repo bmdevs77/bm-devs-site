@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BM Devs | Modern Web Development</title>
+  <meta
+    name="description"
+    content="BM Devs - Mostafa and Basil, a modern frontend and backend web development team."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Cairo:wght@400;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">&lt;BM/&gt;</div>
+      <p>Loading BM Devs Experience...</p>
+    </div>
+  </div>
+
+  <div class="custom-cursor" id="cursor"></div>
+  <div class="custom-cursor-dot" id="cursorDot"></div>
+
+  <div class="particles" id="particles"></div>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-grid"></div>
+
+  <header class="site-header" id="top">
+    <div class="container nav">
+      <a class="brand" href="#top">
+        <span class="brand-mark">&lt;BM/&gt;</span>
+        <span class="brand-text">BM Devs</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#services" data-i18n="nav.services">Services</a>
+        <a href="#partners" data-i18n="nav.partners">Partners</a>
+        <a href="#faq-chat" data-i18n="nav.chat">Smart Chat</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="toggle-btn" id="langToggle">AR</button>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#services" data-i18n="nav.services">Services</a>
+      <a href="#partners" data-i18n="nav.partners">Partners</a>
+      <a href="#faq-chat" data-i18n="nav.chat">Smart Chat</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero reveal" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">
+            <span class="pulse-dot"></span>
+            <span data-i18n="hero.badge">Frontend + Backend Team</span>
+          </div>
+
+          <h1>
+            <span data-i18n="hero.titlePrefix">We build</span>
+            <span class="gradient-text typing-text" id="typingText"></span>
+          </h1>
+
+          <p class="hero-text" data-i18n="hero.text">
+            BM Devs is the digital team of Mostafa and Basil.
+            We build modern websites with clean UI, solid backend logic,
+            smooth motion, and strong digital identity.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary magnetic" href="#contact" data-i18n="hero.btn1">Start a Project</a>
+            <a class="btn btn-secondary magnetic" href="#faq-chat" data-i18n="hero.btn2">Ask Smart Chat</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-card floating">
+              <span class="stat-number">UI</span>
+              <span class="stat-label" data-i18n="hero.stat1">Modern Interfaces</span>
+            </div>
+            <div class="stat-card floating delay-1">
+              <span class="stat-number">API</span>
+              <span class="stat-label" data-i18n="hero.stat2">Clean Backend</span>
+            </div>
+            <div class="stat-card floating delay-2">
+              <span class="stat-number">UX</span>
+              <span class="stat-label" data-i18n="hero.stat3">Smooth Experience</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="hero-panel glass">
+            <div class="hero-panel-badge">BM Devs</div>
+            <h3 data-i18n="heroPanel.title">Modern Web Development Team</h3>
+            <p data-i18n="heroPanel.desc">
+              Frontend by Mostafa. Backend by Basil.
+              One team focused on strong, clean, and modern web experiences.
+            </p>
+
+            <div class="hero-mini-cards">
+              <div class="mini-card">
+                <span class="mini-icon"><i class="fa-solid fa-code"></i></span>
+                <strong>Frontend</strong>
+              </div>
+              <div class="mini-card">
+                <span class="mini-icon"><i class="fa-solid fa-server"></i></span>
+                <strong>Backend</strong>
+              </div>
+              <div class="mini-card">
+                <span class="mini-icon"><i class="fa-solid fa-globe"></i></span>
+                <strong>Web</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="tech-badges">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Frontend</span>
+            <span>Backend</span>
+            <span>Responsive</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="services">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag" data-i18n="services.tag">Services</span>
+          <h2 data-i18n="services.title">What BM Devs can build</h2>
+          <p data-i18n="services.desc">
+            Balanced work between strong frontend presentation and organized backend structure.
+          </p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="feature-card glass tilt-card">
+            <div class="feature-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <h3 data-i18n="services.card1.title">Frontend Development</h3>
+            <p data-i18n="services.card1.desc">
+              Modern responsive interfaces, clean layouts, strong branding, and premium visual polish.
+            </p>
+          </article>
+
+          <article class="feature-card glass tilt-card">
+            <div class="feature-icon"><i class="fa-solid fa-database"></i></div>
+            <h3 data-i18n="services.card2.title">Backend Development</h3>
+            <p data-i18n="services.card2.desc">
+              Scalable APIs, secure data flow, organized architecture, and reliable logic.
+            </p>
+          </article>
+
+          <article class="feature-card glass tilt-card">
+            <div class="feature-icon"><i class="fa-solid fa-bolt"></i></div>
+            <h3 data-i18n="services.card3.title">Full Web Solutions</h3>
+            <p data-i18n="services.card3.desc">
+              From landing pages to complete platforms, BM Devs turns ideas into polished digital products.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+   
+
+    <section class="section reveal" id="partners">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag" data-i18n="partners.tag">Partners</span>
+          <h2 data-i18n="partners.title">The team behind BM Devs</h2>
+          <p data-i18n="partners.desc">Two specialists. One brand. One strong web identity.</p>
+        </div>
+
+        <div class="partners-grid">
+          <article class="partner-card glass">
+            <div class="partner-avatar">M</div>
+            <h3>Mostafa</h3>
+            <span class="partner-role" data-i18n="partners.m.role">Frontend Developer</span>
+            <p data-i18n="partners.m.desc">
+              Focused on interface design, user experience, responsive layouts, and visual polish.
+            </p>
+          </article>
+
+          <article class="partner-card glass">
+            <div class="partner-avatar">B</div>
+            <h3>Basil</h3>
+            <span class="partner-role" data-i18n="partners.b.role">Backend Developer</span>
+            <p data-i18n="partners.b.desc">
+              Focused on APIs, business logic, database structure, and technical foundations.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="faq-chat">
+      <div class="container chat-layout">
+        <div>
+          <div class="section-head left">
+            <span class="section-tag">Smart Chat</span>
+            <h2 data-i18n="chat.title">Instant answers for client questions</h2>
+            <p data-i18n="chat.desc">
+              Supports Arabic and English automatically. If the client writes Arabic, it replies in Arabic.
+              If the client writes in English, it replies in English.
+            </p>
+          </div>
+
+          <div class="quick-questions">
+            <button class="question-chip">What services do you offer?</button>
+            <button class="question-chip">How can I contact BM Devs?</button>
+            <button class="question-chip">Do you build full websites?</button>
+            <button class="question-chip">Who is responsible for frontend?</button>
+            <button class="question-chip">Who is responsible for backend?</button>
+            <button class="question-chip">Do you make responsive websites?</button>
+            <button class="question-chip">بتعملوا ايه؟</button>
+            <button class="question-chip">مين مسؤول عن الفرونت؟</button>
+            <button class="question-chip">مين مسؤول عن الباك؟</button>
+            <button class="question-chip">بتعملوا مواقع كاملة؟</button>
+            <button class="question-chip">ازاي اتواصل معاكم؟</button>
+            <button class="question-chip">هل عندكم انستا باي؟</button>
+          </div>
+        </div>
+
+        <div class="chat-box glass">
+          <div class="chat-header">
+            <div>
+              <strong>BM Devs Smart Assistant</strong>
+              <span data-i18n="chat.badge">Arabic + English support</span>
+            </div>
+            <div class="online-badge">Online</div>
+          </div>
+
+          <div class="chat-messages" id="chatMessages">
+            <div class="message assistant">
+              Hello! Ask anything about BM Devs, our services, roles, payment methods, contact, or the kind of websites we build.
+            </div>
+          </div>
+
+          <form class="chat-form" id="chatForm">
+            <input
+              type="text"
+              id="chatInput"
+              placeholder="Ask in English or Arabic..."
+              autocomplete="off"
+            />
+            <button type="submit" class="btn btn-primary" data-i18n="chat.send">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <div class="section-head left">
+            <span class="section-tag" data-i18n="contact.tag">Contact</span>
+            <h2 data-i18n="contact.title">Let’s build something strong</h2>
+            <p data-i18n="contact.desc">
+              Use the form or reach BM Devs through social platforms and payment methods below.
+            </p>
+          </div>
+
+          <form class="contact-form glass" id="contactForm">
+            <div class="form-row">
+              <input type="text" id="nameField" placeholder="Your Name" data-ph-en="Your Name" data-ph-ar="اسمك" />
+              <input type="email" id="emailField" placeholder="Your Email" data-ph-en="Your Email" data-ph-ar="إيميلك" />
+            </div>
+            <input type="text" id="projectField" placeholder="Project Type" data-ph-en="Project Type" data-ph-ar="نوع المشروع" />
+            <textarea id="messageField" rows="6" placeholder="Tell us about your project..." data-ph-en="Tell us about your project..." data-ph-ar="احكي لنا عن مشروعك..."></textarea>
+            <button type="submit" class="btn btn-primary" data-i18n="contact.formBtn">Send Request</button>
+          </form>
+        </div>
+
+        <div class="contact-side">
+          <div class="contact-main glass">
+            <div class="contact-main-item">
+              <span>Email</span>
+              <strong>bmdevs77@gmail.com</strong>
+            </div>
+
+            <div class="payment-methods">
+  <h3>Payment Methods</h3>
+
+  <div class="payment-grid">
+
+    <div class="payment-card glass-lite">
+      <div class="payment-logo text-logo instapay-text">
+        InstaPay
+      </div>
+      <div>
+        <strong>InstaPay</strong>
+        <span>Available</span>
+      </div>
+    </div>
+
+    <div class="payment-card glass-lite">
+      <div class="payment-logo text-logo vodafone-text">
+        Vodafone Cash
+      </div>
+      <div>
+        <strong>Vodafone Cash</strong>
+        <span>Available</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+            <div class="social-strip">
+                <a href="https://www.facebook.com/share/1GuciLgzz5/" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.instagram.com/bm.devs?igsh=cXppejhldDluZml5" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.tiktok.com/@bm.devs?_r=1&_t=ZS-954cecGH0I1" class="social-icon" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="https://www.youtube.com/@BMDEVs" class="social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+              <a href="https://t.me/bmdevs" class="social-icon" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+              <a href="https://www.threads.com/@bm.devs" class="social-icon" aria-label="Threads"><i class="fa-brands fa-threads"></i></a>
+              <a href="https://x.com/BM_DEVs" class="social-icon" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div>
+        <h3>BM Devs</h3>
+        <p data-i18n="footer.text">Mostafa & Basil — Modern Web Development Team</p>
+      </div>
+      <div>
+        <p>© 2026 BM Devs. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+  <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
